@@ -6242,9 +6242,9 @@ Location:
   border-radius: 5px;
   background: #4D44C5;
   text-align: center;
-  padding: 60px 30px;
+  padding: 50px 30px;
   position: absolute;
-  top: -400px;
+  top: -500px;
   height: 100%;
   transition: all 0.6s;
 }
@@ -6297,7 +6297,7 @@ Location:
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   font-family: var(--ztc-family-font1);
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
@@ -8486,7 +8486,7 @@ Location:
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s16);
   font-weight: var(--ztc-weight-medium);
-  color: var(--ztc-text-text-2);
+  color: var(--ztc-text-text-1);
   line-height: var(--ztc-font-size-font-s24);
   margin-left: 6px;
   display: inline-block;
@@ -26221,6 +26221,7 @@ Location:
   align-items: center;
   transition: all 0.4s;
   margin: 0 0 0 30px;
+  color: #FFF;
 }
 @media (max-width: 767px) {
   .contact14-section-area .contact-author-boxarea .contact-boxarea {
@@ -26232,6 +26233,7 @@ Location:
   background: #fff;
   transition: all 0.4s;
   transform: translateY(-5px);
+  color: #000;
 }
 .contact14-section-area .contact-author-boxarea .contact-boxarea:hover .icons {
   background: #EDECF9;
@@ -26283,7 +26285,7 @@ Location:
 }
 .contact14-section-area .contact-author-boxarea .contact-boxarea .text a {
   color: rgba(255, 255, 255, 0.9);
-  font-family: var(--ztc-family-font1);
+  font-family: #fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -27663,6 +27665,27 @@ Location:
 /*============= CTA CSS AREA ENDS===============*/
 
 /*============= TESTIMONIAL CSS AREA ===============*/
+#trust-indicator {
+  position: relative;
+  z-index: 0; /* keeps it below your content */
+}
+
+#trust-indicator::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/all-images/trust-indicater-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+  z-index: -1;
+  pointer-events: none;
+}
+
 
 #alliances[_ngcontent-dfo-c51] {
     background: linear-gradient(rgba(0, 142, 99, .1), rgba(0, 0, 0, .1)), url(../img/bg/call-to-action-bg.7572af8af3d42ce8.jpg) fixed center center;
@@ -27713,103 +27736,88 @@ p {
 }
 
 .sponsor-carousel {
-      box-sizing: border-box;
-    }
+  font-family: Arial, sans-serif;
+  color: #000;
+  padding: 40px;
+  text-align: center;
+}
 
-    .sponsor-carousel h2{
-      font-size: 24px;
-      font-family: sans-serif;
-      font-weight: 700;
-      margin: 50px;
-    }
+.sponsor-carousel h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 30px 0;
+}
 
-    .sponsor-carousel {
-      font-family: Arial, sans-serif;
-      background: #fff;
-      color: #000;
-      padding: 40px;
-      text-align: center;
-    }
+.carousel-container {
+  position: relative;
+  width: 100%; /* 5 images × width + margins */
+  margin: auto;
+  overflow: hidden;
+}
 
-    .carousel-container {
-      position: relative;
-      max-width: 90%;
-      margin: auto;
-      overflow: hidden;
-    }
+.carousel-track {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.4s ease-in-out;
+   gap: 80px;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% + 160px); /* Adjusted for margins */
+}
 
-    .carousel-track {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
+.carousel-track img {
+  width: 200px;
+  height: 100px;
+  margin: 0 5px;
+  object-fit: contain;
+}
 
-    .carousel-slide {
-      display: flex;
-      flex: 0 0 100%;
-      justify-content: space-around;
-    }
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 24px;
+  padding: 8px 14px;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.3s, transform 0.2s;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
 
-    .carousel-slide img {
-      width: 150px;
-      height: 100px;
-      object-fit: contain;
-    }
+.nav-button:hover {
+  background: rgba(0, 0, 255, 0.8);
+  color: #fff;
+}
 
-    .nav-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(255, 255, 255, 0.3);
-      border: none;
-      font-size: 24px;
-      padding: 5px 10px;
-      cursor: pointer;
-      z-index: 2;
-      transition: background 0.3s;
-    }
+.prev {
+  left: 0px; /* Adjust based on container */
+}
 
-    .nav-button:hover {
-      background: rgba(255, 255, 255, 0.6);
-    }
+.next {
+  right: 0px;
+}
 
-    .prev {
-      left: 10px;
-    }
+.dots {
+  margin-top: 20px;
+}
 
-     .prev:hover {
-       border-radius: 100%;
-      background-color: grey;
-      height: 50px;
-    }
+.dot {
+  display: inline-block;
+  width: 30px;
+  height: 5px;
+  margin: 0 6px;
+  background-color: gray;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
-    .next {
-      right: 10px;
-    }
+.dot.active {
+  background-color: blue;
+}
 
-    .next:hover {
-       border-radius: 100%;
-      background-color: grey;
-      height: 50px;
-    }
-
-
-    .dots {
-      margin-top: 20px;
-    }
-
-    .dot {
-      display: inline-block;
-      width: 30px;
-      height: 5px;
-      margin: 0 6px;
-      background-color: gray;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .dot.active {
-      background-color: blue;
-    }
 
 .slider-section-area {
   position: relative;
