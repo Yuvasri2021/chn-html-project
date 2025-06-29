@@ -22,7 +22,6 @@
 
     <!--=====  JS SCRIPT LINK =======-->
     <script src="assets/js/plugins/jquery-3-6-0.min.js"></script>
-
      <style>
       @media (max-width: 767px) {
   .mobile-logo img {
@@ -64,42 +63,42 @@
                 <a href="index.html"><img src="assets/img/all-images/logo.png" alt="" style="width: 148px; height: 48px;"></a>              </div>
               <div class="main-menu">
                 <ul>
-                  <li><a href="index.html">Home</a></li>  
-                   <li><a href="about.html">About</a></li>
-
-                <li><a href="#">Service <i class="fa-solid fa-angle-down"></i> </a>
-                    <ul class="dropdown-padding">
-                    <li><a href="itservice.html">IT Infrastructure Management </a></li>
-                    <li><a href="software.html">Software Development</a></li>
-                    <li><a href="consulting.html">Consulting</a></li>
-                     
-                  </ul></li>
-                  
-                  <li><a href="#">Resources <i class="fa-solid fa-angle-down"></i></a>
-                  <ul class="dropdown-padding">
-                    <li><a href="blog.html">Blog </a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                  
-                      <li><a href="case.html">Case Study</a></li>
-                  </ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li class="menulist" >
+                    <a href="technology.html">Technology <i class="fa-solid fa-angle-down"></i> </a>
+                    <div>
+                      <ul class="dropdown-padding" style="width: max-content;">
+                        <div class="service-list" >
+                          <ul><a href="itservice.html" style="font-size: 16px; padding: 10px;">IT INFRASTRUCTURE MANAGEMENT</a>
+                            <li><a href="technology/network.html">Network Management</a></li>
+                            <li><a href="technology/enduser.html">End User Computing (EUC)</a></li>
+                            <li><a href="technology/cyber.html">Cyber Security</a></li>
+                            <li><a href="technology/server.html">Server Administration</a></li>
+                            <li><a href="technology/lan.html">LAN Cabling & Surveillance Systems</a></li>
+                          </ul>
+                        </div>
+                        <div class="service-list">
+                          <ul><a href="software.html" style="font-size: 16px; padding: 10px;">SOFTWARE DEVELOPMENT</a>
+                            <li><a href="technology/web.html">Web Design & Development</a></li>
+                            <li><a href="technology/application.html">Application Development</a></li>
+                            <li><a href="technology/analytics.html">Analytics & Data Visualization</a></li>
+                            <li><a href="technology/automation.html">Automation & Digital Transformation</a></li>
+                          </ul>
+                        </div>
+                      </ul>
+                    </div>
                   </li>
-                  <li><a href="#"> carrers <i class="fa-solid fa-angle-down"></i></a>
+                  <li><a href="consulting.html">Consulting <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="dropdown-padding">
-                      <li><a href="#">Job Posting</a></li>
-                      <li><a href="#">Application Form</a></li>
-                     
-                    </ul>
-                  </li>
+                      <li><a href="consulting/work.html">Workspace Management</a></li>
+                      <li><a href="consulting/payroll.html">Payroll & Compliance</a></li>
+                      <li><a href="consulting/training.html">Training & Development</a></li>
+                          </ul></li>
+                  <li><a href="career.html">Careers</a></li>
                   <li><a href="contact.html">Contact Us</a></li>
                 </ul>
               </div>
-              <!-- <div class="btn-area">
-                <div class="search-icon header__search header-search-btn">
-                  <a href="#"><img src="assets/img/icons/search-icons1.svg" alt=""></a>
-                </div>
-                <a href="contact.html" class="header-btn1">Free Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
-              </div> -->
-
               <div class="header-search-form-wrapper">
                 <div class="tx-search-close tx-close"><i class="fa-solid fa-xmark"></i></div>
                 <div class="header-search-container">
@@ -124,7 +123,7 @@
     <div class="col-12">
       <div class="mobile-header-elements">
         <div class="mobile-logo">
-          <a href="index.html"><img src="assets/img/all-images/logo.png" alt=""></a>
+          <a href="index.html"><img src="assets/img/all-images/logo.png" alt="" width="100px"></a>
         </div>
         <div class="mobile-nav-icon dots-menu">
           <i class="fa-solid fa-bars"></i>
@@ -145,80 +144,90 @@
    </div>
   <div class="mobile-nav mobile-nav1">
     <ul class="mobile-nav-list nav-list1">
-      <li><a href="index.html" >Home </a>
-      </li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="#">Service <i class="fa-solid fa-angle-down"></i> </a>
-                    <ul class="dropdown-padding">
-                    <li><a href="itservice.html">IT Infrastructure Management </a></li>
-                    <li><a href="software.html">Software Development</a></li>
-                    <li><a href="consulting.html">Consulting</a></li>
-                     
-                  </ul></li>
-      <li><a href="#">Resources</a>
-        <ul class="sub-menu">
-          <li><a href="blog.html">Blog </a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                   
-                      <li><a href="case.html">Case Study</a></li>
-        </ul>
-      </li>
-      <li><a href="#">carrers</a>
-        <ul class="sub-menu">
-           <li><a href="#">Job Posting</a></li>
-           <li><a href="#">Application Form</a></li>
-        </ul>
-      </li>
-      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="index.html">Home </a>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="technology.html">Technology</a>
+          <ul class="sub-menu">
+            <li><a href="itservice.html">It Infrastructure Management</a>
+             <ul class="sub-menu">
+              <li><a href="technology/network.html">Network Management</a></li>
+              <li><a href="technology/enduser.html">End User Computing (EUC)</a></li>
+              <li><a href="technology/cyber.html">Cyber Security</a></li>
+              <li><a href="technology/server.html">Server Administration</a></li>
+              <li><a href="technology/lan.html">LAN Cabling & Surveillance Systems</a></li>
+             </ul></li>
+            <li><a href="software.html">Software Development</a>
+             <ul class="sub-menu">
+              <li><a href="technology/web.html">Web Design & Development</a></li>
+              <li><a href="technology/application.html">Application Development</a></li>
+              <li><a href="technology/analytics.html">Analytics & Data Visualization</a></li>
+              <li><a href="technology/automation.html">Automation & Digital Transformation</a></li>
+             </ul></li>
+          </ul>
+        </li>
+        <li><a href="consulting.html">Consulting</a>
+          <ul class="sub-menu">
+               <li><a href="consulting/work.html">Workspace Management</a></li>
+                <li><a href="consulting/payroll.html">Payroll & Compliance</a></li>
+                <li><a href="consulting/training.html">Training & Development</a></li>
+          </ul>
+        </li>
+        <li><a href="career.html">Careers</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
     </ul>
 
-    <div class="allmobilesection">
-      <a href="contact.html"  class="header-btn1">Get Started <span><i class="fa-solid fa-arrow-right"></i></span></a>
-      <div class="single-footer">
-        <h3>Contact Info</h3>
-        <div class="footer1-contact-info">
-          <div class="contact-info-single">
-            <div class="contact-info-icon">
-              <i class="fa-solid fa-phone-volume"></i>
-            </div>
-            <div class="contact-info-text">
-              <a href="tel:+917010203031">+91 7010203031</a>
-            </div>
-          </div>
-
-          <div class="contact-info-single">
-            <div class="contact-info-icon">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="contact-info-text">
-              <a href="mailto:info@example.com">info@chnindia.com</a>
-            </div>
-          </div>
-
-          <div class="single-footer">
-            <h3>Our Location</h3>
-            
+  <div class="allmobilesection">
+        <a href="contact.html" class="header-btn1">Get Started <span><i class="fa-solid fa-arrow-right"></i></span></a>
+        <div class="single-footer">
+          <h3>Contact Info</h3>
+          <div class="footer1-contact-info">
             <div class="contact-info-single">
               <div class="contact-info-icon">
-                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-phone-volume"></i>
               </div>
               <div class="contact-info-text">
-                <a href="mailto:info@example.com" >55 East Birchwood Ave.Brooklyn, <br> New York 11201,United States</a>
+                <a href="tel:+917010203031" style="color: #000;">+91 7010203031</a>
               </div>
             </div>
 
-          </div>
-          <div class="single-footer">
-            <h3>Social Links</h3>
-            
-            <div class="social-links-mobile-menu">
-              <ul>
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-              </ul>
+            <div class="contact-info-single">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-info-text">
+                <a href="mailto:info@chnindia.com" style="color: #000;">info@chnindia.com</a>
+              </div>
             </div>
+
+            <div class="single-footer">
+              <h3>Our Location</h3>
+              <div class="contact-info-single">
+                <div class="contact-info-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-info-text">
+                  <a href="mailto:info@example.com" style="color: #000;">Head Office:
+                    CHN Technologies private limited
+                    New no. 70 / Old No. 28, Fourth Main Road, CIT Nagar, Chennai. 600 035
+                    Branch Office:
+                    CHN Technologies Private Limited, 3rd Floor, 4th Block, Covai Tech Park, Site No. 87, Kovai
+                    Thirunagar, Kalapatty Village, Coimbatore - 641014, Tamil Nadu, India
+                    Phone: +91 7010203031</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="single-footer">
+              <h3>Social Links</h3>
+              <div class="social-links-mobile-menu">
+                <ul>
+                  <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+              </div>
           </div>
         </div>
       </div>
@@ -235,8 +244,9 @@
         <div class="row">
             <div class="col-lg-8 m-auto">
                 <div class="about-inner-header heading9 text-center">
-                    <h1>Consulting</h1>
-                    <a href="index.html">Home <i class="fa-solid fa-angle-right"></i> <span>Our service</span></a>
+                    <h1>Strategic HR & Compliance Consulting to Power Business Growth</h1>
+                    <p style="color: black;">At CHN Technologies, our consulting services are designed to help businesses unlock operational efficiency and workforce excellence. We specialize in three core areas: <b>Workforce Management, Payroll & Compliance, and Training & Development </b>— providing expert guidance tailored to your organizational structure, industry, and growth stage.</p>
+                    <a href="index.html">Home <i class="fa-solid fa-angle-right"></i> <span>Consulting</span></a>
                 </div>
             </div>
         </div>
@@ -244,321 +254,170 @@
 </div>
 <!--===== HERO AREA ENDS =======-->
 
-<!--===== BLOG AREA STARTS =======-->
+<!--===== consulting offering =======-->
 <div class="blog-auhtor-section-area sp1">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 m-auto">
+            <div class="col-lg-8 m-auto" style="width: 100%;">
                 <div class="blog-auhtor-sidebar-area heading2">
-                    <div class="tags-area">
-                        
+                    <div class="tags-area">    
                       </div>
-                        
-                      <div class="space34"></div>
-                      <div class="img1">
+            </div>
+            <div class="col-lg-6" >
+                <div class="about-all-images-area">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <div class="img1 image-anime" style="position: relative; width: 1080px; height:auto; margin-left:100px;">
+                           <div class="img1"  class="consulting-img">
                         <img src="assets/img/all-images/itimg2.jpg" alt="">
                       </div>
-                      <div class="space24"></div>
-                    
-                      <div class="space50"></div>
-                     
-                      <div class="space50"></div>
-                      <h3>Work Force Management :</h3>
-                      <p>Optimize your human capital with our comprehensive workforce management solutions designed to streamline operations and boost productivity. Our expert team provides end-to-end employee scheduling, time tracking, and performance analytics to help you make data-driven staffing decisions. We implement cutting-edge workforce management software that automates shift planning, manages compliance requirements, and provides real-time insights into labor costs and efficiency metrics. Our services include strategic workforce planning, attendance management systems, and customized reporting dashboards that give you complete visibility into your team's performance. Partner with us to reduce operational overhead, improve employee satisfaction, and achieve sustainable growth through intelligent workforce optimization.</p>
-                      <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p></p>
-
-
-                        </div>
                       </div>
-
-                      <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p>Permanent Recruitment</p>
-                        </div>
-                      </div>
-
-                      <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p>Executive Search</p>
-                        </div>
-                      </div>
-
-                      <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p>Recruitment Process Outsourcing(RPO)</p>
-                        </div>
-                      </div>
-
-                      <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p>Contigent Staffing
-                            </p>
-                        </div>
-                      </div>
-
-                       <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p>Overseas Recruitment
-                            </p>
-                        </div>
-                      </div>
-                      <div class="space50"></div>
-                      <div class="img1">
-                      </div>
-                      <div class="space50"></div>
-                      <h3>Training & Development</h3>
-
-                      
-                            <p>Empower your workforce with our comprehensive training and development programs designed to enhance skills, boost performance, and drive organizational growth. We offer customized learning solutions including technical skill development, leadership training, soft skills enhancement, and industry-specific certification programs tailored to your business needs. Our experienced trainers deliver engaging sessions through multiple formats - classroom instruction, virtual workshops, e-learning modules, and hands-on practical training to accommodate diverse learning preferences. We conduct thorough skills assessments, create personalized development plans, and provide ongoing progress tracking to ensure measurable improvements in employee competency and job satisfaction. Invest in your team's future with our proven training methodologies that transform individual potential into organizational success, resulting in higher retention rates, improved productivity, and a more competitive workforce.</p>
-                        
-
-                      <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p>Corporate Training</p>
-                        </div>
-                      </div>
-
-                      <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p>Leadership Development</p>
-                        </div>
-                      </div>
-
-                      <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p>Skill Enancement Workshops</p>
-                        </div>
-                      </div>
-
-                      <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p>Complaince and Regulatory Training</p>
-                        </div>
-                      </div>
-
-                       <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p>Train & Deploy</p>
-                        </div>
-                      </div>
-                        
-
-                 <div class="img1">
-                      </div>
-                      <div class="space50"></div>
-                      <h3>Consulting Payroll &  
-Compliances</h3>
-
-                      
-
-                            <p>Navigate the complex landscape of payroll management and regulatory compliance with our expert consulting services that ensure accuracy, transparency, and legal adherence. Our specialized team handles end-to-end payroll processing, tax calculations, statutory deductions, and timely salary disbursements while maintaining complete confidentiality and data security. We provide comprehensive compliance management covering labor laws, PF, ESI, professional tax, TDS, and other statutory requirements to keep your organization fully compliant with evolving regulations. Our consulting services include payroll audit, policy development, grievance handling, and risk assessment to minimize legal exposure and operational inefficiencies. Trust our expertise to streamline your payroll operations, reduce administrative burden, and ensure seamless compliance management, allowing you to focus on core business activities while we handle the complexities of compensation and regulatory requirements.</p>
-                        
-
-                      <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p>End-to-End Payroll 
-Processing</p>
-                        </div>
-                      </div>
-
-                      <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p> Statutory Deductions & 
-Filings (PF, ESI, TDS, etc)</p>
-                        </div>
-                      </div>
-
-                      <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p> Payroll Reports & Pay slip 
-Generation</p>
-                        </div>
-                      </div>
-
-                      <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p>Labor Law Audits & 
-Registrations</p>
-                        </div>
-                      </div>
-
-                       <div class="right-area">
-                        <div class="check1">
-                            <img src="assets/img/icons/check4.svg" alt="">
-                        </div>
-                        <div class="content">
-                            <p> Compliance Monitoring & 
-Reporting</p>
-                        </div>
-                      </div>
-                      
-                     
-
-                     
-
-
-
-                    
-
-
-                        
-
-
-                         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                     
-
-                     
-                </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>
 </div>
-<!--===== BLOG AREA ENDS =======-->
+     </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h2 style="text-align: center; padding: 1.5rem; font-weight: 600;">Our Core Consulting Offerings</h2>
+<section class="services-container">
+  <div class="service-card">
+    <h3>1. Workforce Management Consulting</h3>
+    <p>
+    Build agile recruitment models, streamline hiring workflows, and improve retention through industry-specific workforce strategies.
+    </p>
+    <a href="consulting/work.html" class="learn-more">🔘 Learn More →</a>
+  </div>
 
-<!--===== BLOG AREA STARTS =======-->
+  <div class="service-card">
+    <h3>2. Payroll & Compliance Consulting</h3>
+    <p>
+     Ensure complete statutory compliance, error-free payroll systems, and risk-free HR operations through structured audits and expert guidance.
+    </p>
+    <a href="consulting/payroll.html" class="learn-more">🔘 Learn More →</a>
+  </div>
 
-  <!--===== BLOG AREA ENDS =======-->
+  <div class="service-card">
+    <h3>3. Training & Development Consulting</h3>
+    <p>
+    Upskill your workforce with training strategies designed for productivity, leadership, and compliance readiness.
+    </p>
+    <a href="consulting/training.html" class="learn-more">🔘 Learn More →</a>
+  </div>
+</section>
 
-<!--===== CTA AREA STARTS =======-->
+<!-- partners -->
 
-<!--===== CTA AREA ENDS =======-->
+<div class="network-preview">
+  <div class="container">
+ <h2 class="section-title">Why Choose CHN as Your Consulting Partner?</h2>
+    <p class="industry-text"><b>Industry-Specific Expertise</b><br>
+With deep domain knowledge across HR, payroll, compliance, and operations, we craft tailored strategies that align with your sector-specific challenges and opportunities.
+    </p>
+
+    <p class="industry-text"><b>Result-Oriented Approach</b><br>
+We don’t just advise — we deliver. Every recommendation we provide is backed by clear KPIs and designed to drive measurable business outcomes.
+    </p>
+
+    <p class="industry-text"><b>End-to-End Support</b><br>
+From initial assessment to implementation and post-deployment support, we stand by your side through every phase of transformation to ensure success.
+    </p>
+
+    <p class="industry-text"><b>Future-Ready Solutions</b><br>
+Whether it's embracing automation, digitizing HR functions, or enhancing compliance, we help you stay agile and ahead of regulatory and technological changes.
+    </p>
+
+    <p class="industry-text"><b>Campaign-Driven Strategy</b><br>
+We turn consulting into actionable growth by launching targeted campaigns — from workforce improvement initiatives to compliance drives — ensuring your internal goals are executed with external impact.
+</div>
+</div>
+
+<!-- Call -->
+
+<section class="cta">
+  <h2>Let’s Transform Challenges into Opportunities</h2>
+  <p>Whether you're scaling operations, facing compliance hurdles, or planning a workforce transformation — CHN is here to guide you with clarity and confidence.</p>
+  <a href="contact.html" class="request-btn">👉 Contact us today to schedule a free consultation.
+</a>
+</section>
 
 <!--===== FOOTER AREA STARTS =======-->
-<div class="footer1-section-area">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-      <div class="footer-logo-area">
-            <img src="assets/img/all-images/logo.png" alt="" style=" width: 148px ;height: 28px;">
-            <p style="text-align: justify;">At CHN Technologies, we believe in the power of innovation. Our commitment to quality and cutting-edge technology enables us to provide our customers with measurable benefits and sustainable growth.</p>
+<div class="footer14-section-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-logo-area">
+            <img src="assets/img/all-images/logo.png" alt="">
+            <h5>Empowering Businesses Through Technology & Expertise</h5>
+            <p style="text-align: justify;">CHN Technologies is a leading provider of technology and consulting
+              solutions delivering IT, HR, and business services with innovation and trust.</p>
             <ul>
-            <li><a href="#"><img src="assets/img/icons/facebook.svg" alt=""></a></li>
-            <li><a href="#"><img src="assets/img/icons/instagram.svg" alt=""></a></li>
-            <li><a href="#"><img src="assets/img/icons/linkedin.svg" alt=""></a></li>
-            <li><a href="#"><img src="assets/img/icons/youtube.svg" alt=""></a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-6">
-          <div class="footer-logo-area1">
-            <h3>About Link</h3>
-            <ul>
-              <li><a href="blog.html">Our Blog</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="service2.html">Services</a></li>
-            <li><a href="case.html">Case Study</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
             </ul>
           </div>
         </div>
-
-     <div class="col-lg-3 col-md-6">
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-logo-area1">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="blog.html">Company</a></li>
+              <li><a href="technology.html">Technology</a></li>
+              <li><a href="consulting.html">Consulting</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
           <div class="footer-logo-area2">
             <h3>Get in touch</h3>
-            <ul>
-              <li><a href="mailto"><img src="assets/img/icons/email.svg" alt=""><span>info@chnindia.com</span></a></li>
-              <li style="text-align: justify;"><a href="#"><img src="assets/img/icons/location.svg" alt=""><span>CHN Technologies private 
-              <br class="d-lg-block d-none">limited New no. 70 / Old  <br>No. 28, Fourth Main Road, <br class="d-lg-block d-none"> CIT Nagar, Chennai. 600 035</span></a></li>
-             <!-- <li style="text-align: justify;" ><a href="#"><img src="assets/img/icons/location.svg" alt=""><span>CHN Technologies private 
-              <br class="d-lg-block d-none">limited 3rd Floor, 4th Block,<br> Covai Tech Park,Site No. 87, <br class="d-lg-block d-none">   Kovai Thirunagar Kalapatty <br>Village, Coimbatore - 641014</span></a></li> -->
-
-
-              <li><a href="tel:123-456-7890"><img src="assets/img/icons/phone.svg" alt=""><span>+91 7010203031</span></a></li>
+            <ul>            
+              <li style="text-align: justify;"><a href="#"><img src="assets/img/icons/location.svg" alt=""> Chennai(Head
+                  office)| <br>Coimbatore | <br class="d-lg-block d-none"> Bangalore (Branch office)
+                  </span></a></li>
+              <li><a href="tel:123-456-7890"><img src="assets/img/icons/phone.svg" alt=""><span> +91-7010203031 /
+                    <br>+91-9384817323
+                  </span></a></li>
+                 <li><a href="mailto"><img src="assets/img/icons/email.svg" alt="">Sales: sales@chnindia.com
+                  <br>General: info@chnindia.com
+                  </span></a></li>
             </ul>
           </div>
         </div>
-     <div class="col-lg-4 col-md-6">
-        <div class="footer-logo-area2">
-          <ul>
-             <li style="text-align: justify;" ><a href="#"><img src="assets/img/icons/location.svg" alt=""><span>CHN Technologies private 
-              <br class="d-lg-block d-none">limited 3rd Floor, 4th Block,<br> Covai Tech Park,Site No. 87, <br class="d-lg-block d-none">   Kovai Thirunagar Kalapatty <br>Village, Coimbatore - 641014</span></a></li>
-
-          </ul>
-           
-
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-logo-area2">
+            <ul>
+              <li style="text-align: justify;"><a href="#"><img src="assets/img/icons/location.svg" alt=""><span>CHN
+                    Technologies private
+                    <br class="d-lg-block d-none">limited 3rd Floor, 4th Block,<br> Covai Tech Park,Site No. 87, <br
+                      class="d-lg-block d-none"> Kovai Thirunagar Kalapatty <br>Village, Coimbatore - 641014</span></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="space80 d-lg-block d-none"></div>
-    <div class="space40 d-lg-none d-block"></div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="copyright-area">
-          <div class="pera">
-            <p>ⓒCopyright 2024 SEOC . All rights reserved</p>
+      <div class="space80 d-lg-block d-none"></div>
+      <div class="space40 d-lg-none d-block"></div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copyright-area">
+            <div class="pera">
+              <p>ⓒCopyright 2024 CHN. All rights reserved</p>
+            </div>
+            <ul>
+              <li><a href="terms.html">Terms & Conditions</a></li>
+              <li><a href="privacy.html" class="m-0"> Privacy Policy </a></li>
+            </ul>
           </div>
-          <ul>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#" class="m-0"> Privacy Policy </a></li>
-          </ul>
         </div>
       </div>
     </div>
   </div>
-</div>
 <!--===== FOOTER AREA ENDS =======-->
 
 <!--===== JS SCRIPT LINK =======-->
