@@ -32517,3 +32517,108 @@ p {
         width: 80%;
       }
     }
+
+    /* privacy */
+
+    .privacy-policy-section {
+  max-width: 960px;
+  margin: 60px auto;
+  padding: 60px 40px;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+  transition: all 0.3s ease-in-out;
+}
+
+.privacy-policy-section h2 {
+  font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #004085;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 6px;
+  font-weight: 700;
+}
+
+.privacy-policy-section h3 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #0056b3;
+  font-weight: 600;
+}
+
+.privacy-policy-section p {
+  margin-bottom: 18px;
+  text-align: justify;
+  color: #222;
+}
+
+.privacy-policy-section ul {
+  padding-left: 25px;
+  margin-bottom: 18px;
+}
+
+.privacy-policy-section ul li {
+  list-style-type: square;
+  margin-bottom: 10px;
+  color: #555;
+  position: relative;
+  padding-left: 5px;
+}
+
+.privacy-policy-section ul li::marker {
+  color: #007bff;
+}
+
+.privacy-policy-section a {
+  color: #007BFF;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.privacy-policy-section a:hover {
+  color: #0056b3;
+}
+
+.privacy-policy-section address {
+  background: #f8f9fa;
+  padding: 20px;
+  margin-top: 30px;
+  border-left: 4px solid #007bff;
+  font-style: normal;
+  line-height: 1.6;
+  border-radius: 6px;
+  color: #333;
+}
+
+/* Extra Style Enhancements */
+.privacy-policy-section .highlight {
+  background-color: #e7f1ff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #004085;
+  display: inline-block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .privacy-policy-section {
+    padding: 40px 20px;
+    margin: 30px 15px;
+  }
+
+  .privacy-policy-section h2 {
+    font-size: 22px;
+  }
+
+  .privacy-policy-section h3 {
+    font-size: 18px;
+  }
+}
